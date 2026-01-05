@@ -1,6 +1,9 @@
 export default {
-  async fetch(request, env, ctx) {
-    return new Response("Backend is live from GitHub!");
-  },
+  async fetch(request) {
+    return new Response("Evalis AI backend is running ✅", {
+      headers: {
+        "content-type": "text/plain; charset=utf-8"
+      }
+    });
+  }
 };
-
